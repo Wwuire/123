@@ -2,7 +2,7 @@ name: Run Bot
 
 on:
   schedule:
-    - cron: '0 10 * * *'  # Запуск каждый день в 10:00 UTC
+    - cron: '40 15 * * *'  # Запуск каждый день в 10:00 UTC
 
 jobs:
   run-bot:
