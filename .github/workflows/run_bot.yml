@@ -2,7 +2,8 @@ name: Run Bot
 
 on:
   schedule:
-    - cron: '40 15 * * *'  # Запуск каждый день в 10:00 UTC
+    - cron: '47 15 * * *'  # Запуск каждый день в 15:40 UTC
+  workflow_dispatch:  # Позволяет вручную запустить workflow из вкладки Actions
 
 jobs:
   run-bot:
@@ -23,4 +24,4 @@ jobs:
 
       - name: Run bot
         run: |
-          python my_bot.py
+          python /home/Wwuire/my_bot.py
